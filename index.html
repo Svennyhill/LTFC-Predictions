@@ -43,6 +43,7 @@
       color: #c9d8e8;
     }
 
+    /* MOBILE FINAL FIX */
     .dashboard {
       width: 100%;
       background: #ffffff;
@@ -53,7 +54,8 @@
     .dashboard iframe {
       display: block;
       width: 100%;
-      height: auto;     /* let Excel decide */
+      min-height: 100vh;   /* ensures full screen height */
+      height: auto;        /* allows Excel to expand */
       border: 0;
     }
 
@@ -76,7 +78,8 @@
 
       .dashboard iframe {
         width: 100%;
-        height: auto; /* no fixed height on mobile */
+        min-height: 100vh; /* same rule for mobile */
+        height: auto;
       }
     }
   </style>
