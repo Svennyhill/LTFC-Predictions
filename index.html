@@ -7,9 +7,7 @@
   <title>LTFC Predictions 2026/27</title>
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     html, body {
       margin: 0;
@@ -45,19 +43,17 @@
       color: #c9d8e8;
     }
 
-    /* MAIN DASHBOARD AREA */
     .dashboard {
       width: 100%;
       background: #ffffff;
-      overflow: visible; /* allow full scrolling */
+      overflow: visible;
       padding-bottom: 20px;
     }
 
     .dashboard iframe {
       display: block;
       width: 100%;
-      height: auto;          /* let iframe expand naturally */
-      min-height: 1400px;    /* safety minimum */
+      height: 8000px;   /* tall enough for full sheet */
       border: 0;
     }
 
@@ -69,7 +65,6 @@
       padding: 12px;
     }
 
-    /* MOBILE-FIRST OPTIMISATION */
     @media (max-width: 600px) {
       .header {
         padding: 14px 8px 12px;
@@ -80,9 +75,7 @@
       }
 
       .dashboard iframe {
-        width: 100%;
-        height: auto;
-        min-height: 1800px; /* taller minimum for mobile */
+        height: 9000px; /* taller for mobile */
       }
     }
   </style>
@@ -100,7 +93,6 @@
     <section class="dashboard">
       <iframe 
         width="100%" 
-        height="1800" 
         frameborder="0" 
         scrolling="yes"
         src="https://1drv.ms/x/c/d3be4f836f44f57c/IQSThTv5Gr31SKbgwkQnZJGcASvsJujSICZrGdIhVWcE9wQ?em=2&wdAllowInteractivity=False&Item='Dash'!A1%3AO234&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True">
