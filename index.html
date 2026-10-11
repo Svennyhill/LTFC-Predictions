@@ -1,218 +1,117 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
   <meta charset="UTF-8">
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
- 
 
   <title>LTFC Predictions 2026/27</title>
 
- 
-
   <style>
-
     * {
-
       box-sizing: border-box;
-
     }
-
- 
 
     html, body {
-
       margin: 0;
-
       padding: 0;
-
       background: #071b35;
-
       font-family: Arial, Helvetica, sans-serif;
-
     }
-
- 
 
     .page {
-
       width: 100%;
-
       max-width: 760px;
-
       margin: 0 auto;
-
       background: #ffffff;
-
       min-height: 100vh;
-
     }
-
- 
 
     .header {
-
       background: #071b35;
-
       color: white;
-
       text-align: center;
-
       padding: 18px 12px 16px;
-
     }
-
- 
 
     .header h1 {
-
       margin: 0;
-
       font-size: 24px;
-
       line-height: 1.2;
-
     }
-
- 
 
     .header p {
-
       margin: 6px 0 0;
-
       font-size: 14px;
-
       color: #c9d8e8;
-
     }
 
- 
-
+    /* MAIN DASHBOARD AREA */
     .dashboard {
-
       width: 100%;
-
       background: #ffffff;
-
-      overflow: hidden;
-
+      overflow: visible; /* allow full scrolling */
+      padding-bottom: 20px;
     }
-
- 
 
     .dashboard iframe {
-
       display: block;
-
       width: 100%;
-
-      height: 6000px;
-
+      height: auto;          /* let iframe expand naturally */
+      min-height: 1400px;    /* safety minimum */
       border: 0;
-
-      margin: 0;
-
-      padding: 0;
-
     }
-
- 
 
     .footer {
-
       text-align: center;
-
       background: #071b35;
-
       color: #aebed0;
-
       font-size: 11px;
-
       padding: 12px;
-
     }
 
- 
-
+    /* MOBILE-FIRST OPTIMISATION */
     @media (max-width: 600px) {
-
       .header {
-
         padding: 14px 8px 12px;
-
       }
-
- 
 
       .header h1 {
-
         font-size: 21px;
-
       }
-
- 
 
       .dashboard iframe {
-
-        height: 6000px;
-
+        width: 100%;
+        height: auto;
+        min-height: 1800px; /* taller minimum for mobile */
       }
-
     }
-
   </style>
-
 </head>
-
- 
 
 <body>
 
- 
-
   <main class="page">
 
- 
-
     <header class="header">
-
       <h1>LTFC Predictions 2026/27</h1>
-
       <p>Stats &amp; Standings</p>
-
     </header>
 
- 
-
     <section class="dashboard">
-
- 
-
-      <!-- REPLACE THE LINE BELOW WITH YOUR EXCEL EMBED CODE -->
-
- 
-
-<iframe width="401" height="5500" frameborder="0" scrolling="yes" src="https://1drv.ms/x/c/d3be4f836f44f57c/IQSThTv5Gr31SKbgwkQnZJGcASvsJujSICZrGdIhVWcE9wQ?em=2&wdAllowInteractivity=False&Item='Dash'!A1%3AO234&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"></iframe>
+      <iframe 
+        width="100%" 
+        height="1800" 
+        frameborder="0" 
+        scrolling="yes"
+        src="https://1drv.ms/x/c/d3be4f836f44f57c/IQSThTv5Gr31SKbgwkQnZJGcASvsJujSICZrGdIhVWcE9wQ?em=2&wdAllowInteractivity=False&Item='Dash'!A1%3AO234&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True">
+      </iframe>
     </section>
 
- 
-
     <footer class="footer">
-
       LTFC Predictions 2026/27
-
     </footer>
-
- 
 
   </main>
 
- 
-
 </body>
-
 </html>
