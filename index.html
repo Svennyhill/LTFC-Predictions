@@ -7,7 +7,9 @@
   <title>LTFC Predictions 2026/27</title>
 
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     html, body {
       margin: 0;
@@ -43,19 +45,16 @@
       color: #c9d8e8;
     }
 
-    /* MOBILE FINAL FIX */
     .dashboard {
       width: 100%;
       background: #ffffff;
-      overflow: visible; /* allow full scrolling */
       padding-bottom: 20px;
     }
 
     .dashboard iframe {
       display: block;
       width: 100%;
-      min-height: 100vh;   /* ensures full screen height */
-      height: auto;        /* allows Excel to expand */
+      height: 900px;
       border: 0;
     }
 
@@ -77,9 +76,7 @@
       }
 
       .dashboard iframe {
-        width: 100%;
-        min-height: 100vh; /* same rule for mobile */
-        height: auto;
+        height: 900px;
       }
     }
   </style>
@@ -91,16 +88,19 @@
 
     <header class="header">
       <h1>LTFC Predictions 2026/27</h1>
-      <p>Stats &amp; Standings</p>
+      <p>Stats & Standings</p>
     </header>
 
     <section class="dashboard">
-      <iframe 
-        width="100%" 
-        frameborder="0" 
+
+      <iframe
+        width="100%"
+        height="900"
+        frameborder="0"
         scrolling="yes"
-        <iframe width="400" height="900" frameborder="0" scrolling="no" src="https://1drv.ms/x/c/d3be4f836f44f57c/IQSThTv5Gr31SKbgwkQnZJGcASvsJujSICZrGdIhVWcE9wQ?wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True">
+        src="https://1drv.ms/x/c/d3be4f836f44f57c/IQSThTv5Gr31SKbgwkQnZJGcASvsJujSICZrGdIhVWcE9wQ?wdAllowInteractivity=False&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True">
       </iframe>
+
     </section>
 
     <footer class="footer">
