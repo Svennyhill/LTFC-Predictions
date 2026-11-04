@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>LTFC Predictions 2026/27</title>
 
   <style>
@@ -11,18 +10,16 @@
       box-sizing: border-box;
     }
 
-    html, body {
+    body {
       margin: 0;
-      padding: 0;
       background: #071b35;
       font-family: Arial, Helvetica, sans-serif;
     }
 
     .page {
-      width: 100%;
-      max-width: 760px;
+      max-width: 1100px;
       margin: 0 auto;
-      background: #ffffff;
+      background: white;
       min-height: 100vh;
     }
 
@@ -30,53 +27,35 @@
       background: #071b35;
       color: white;
       text-align: center;
-      padding: 18px 12px 16px;
+      padding: 15px;
     }
 
     .header h1 {
       margin: 0;
-      font-size: 24px;
-      line-height: 1.2;
     }
 
     .header p {
-      margin: 6px 0 0;
-      font-size: 14px;
-      color: #c9d8e8;
-    }
-
-    .dashboard {
-      width: 100%;
-      background: #ffffff;
-      padding-bottom: 20px;
+      margin: 5px 0 0;
     }
 
     .dashboard iframe {
-      display: block;
       width: 100%;
       height: 900px;
-      border: 0;
+      border: none;
+      display: block;
     }
 
     .footer {
       text-align: center;
       background: #071b35;
-      color: #aebed0;
-      font-size: 11px;
-      padding: 12px;
+      color: #cccccc;
+      padding: 10px;
+      font-size: 12px;
     }
 
-    @media (max-width: 600px) {
-      .header {
-        padding: 14px 8px 12px;
-      }
-
-      .header h1 {
-        font-size: 21px;
-      }
-
+    @media (max-width: 768px) {
       .dashboard iframe {
-        height: 900px;
+        height: 1200px;
       }
     }
   </style>
@@ -84,24 +63,28 @@
 
 <body>
 
-  <main class="page">
+<div class="page">
 
-    <header class="header">
-      <h1>LTFC Predictions 2026/27</h1>
-      <p>Stats & Standings</p>
-    </header>
+  <div class="header">
+    <h1>LTFC Predictions 2026/27</h1>
+    <p>Stats & Standings</p>
+  </div>
 
-    <section class="dashboard">
+  <div class="dashboard">
 
-      <iframe width="402" height="900" frameborder="0" scrolling="no" src="https://1drv.ms/x/c/d3be4f836f44f57c/IQSThTv5Gr31SKbgwkQnZJGcASvsJujSICZrGdIhVWcE9wQ?wdAllowInteractivity=False&wdInConfigurator=True&wdInConfigurator=True"></iframe>
+    <iframe
+      src="https://1drv.ms/x/c/d3be4f836f44f57c/IQSThTv5Gr31SKbgwkQnZJGcASvsJujSICZrGdIhVWcE9wQ?wdAllowInteractivity=False&wdInConfigurator=True&wdInConfigurator=True"
+      frameborder="0"
+      scrolling="yes">
+    </iframe>
 
-    </section>
+  </div>
 
-    <footer class="footer">
-      LTFC Predictions 2026/27
-    </footer>
+  <div class="footer">
+    LTFC Predictions 2026/27
+  </div>
 
-  </main>
+</div>
 
 </body>
 </html>
